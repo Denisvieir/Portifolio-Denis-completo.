@@ -1,0 +1,112 @@
+/* Estilos Gerais */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 18px; /* Aumentando o tamanho da fonte */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: white; /* Cor do texto do menu alterada para branco */
+}
+
+.navbar a {
+    color: white; /* Mudando a cor dos links para branco */
+    transition: color 0.3s ease; /* Transição suave para a cor do link */
+}
+
+.navbar a:hover {
+    color: #007bff; /* Cor ao passar o mouse */
+}
+
+/* Seções */
+.portfolio {
+    display: flex; /* Exibir itens do portfólio lado a lado */
+    flex-wrap: wrap; /* Permitir quebra de linha se necessário */
+    justify-content: space-around; /* Espaçamento entre os itens */
+}
+
+.hero, .cta {
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Itens do Portfólio */
+.portfolio-item {
+    margin: 20px; /* Ajustar a margem para centralizar os itens */
+    text-align: center; /* Centralizar o texto dentro de cada item */
+}
+
+
+/* Botões */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Para ficar atrás do conteúdo */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transição suave para o botão */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Classe específica para o botão "Visitar Site" */
+.btn-visitar-site {
+    background-color: #007bff; /* Azul */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transição suave para o botão */
+}
+
+.btn-visitar-site:hover {
+    background-color: #0056b3; /* Azul escuro ao passar o mouse */
+}
+
+/* Avatar */
+.avatar {
+    display: block;
+    margin: 0 auto;
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%; /* Para um efeito de círculo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Reduzir o tamanho da fonte em telas menores */
+    }
+
+    .navbar {
+        flex-direction: column; /* Mudar a direção da navbar em telas menores */
+    }
+
+    .portfolio-item {
+        margin: 10px 0; /* Reduzir a margem em telas menores */
+    }
+}
